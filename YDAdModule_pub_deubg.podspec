@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
-  spec.name         = 'YDAdModule_pub_deubg'
+  spec.name         = 'YDAdModule_pub_debug'
   spec.version      = '3.0.0.1'
   spec.license      = { :type => 'MIT' }
-  spec.homepage     = 'https://github.com/yuedong12345/ydsdk_pub_deubg.git'
+  spec.homepage     = 'https://github.com/yuedong12345/ydsdk_pub_debug.git'
   spec.authors      = { 'yuedong12345' => 'yuedong12345@126.com' }
   spec.summary      = 'ydAd'
-  spec.source       = { :git => 'https://github.com/yuedong12345/ydsdk_pub_deubg.git', :tag =>spec.version.to_s  }
+  spec.source       = { :git => 'https://github.com/yuedong12345/ydsdk_pub_debug.git', :tag =>spec.version.to_s  }
   spec.platform     = :ios, '10.0'
   spec.vendored_frameworks = 'YDAdModule.framework'
   spec.resources = 'YDAdModule.bundle'
