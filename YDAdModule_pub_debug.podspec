@@ -10,14 +10,14 @@ Pod::Spec.new do |spec|
   
   # Updated to use xcframeworks
   # 包含 Core 和所有 Adapter 模块
-  spec.vendored_frameworks = 'YDAdModule.xcframework', 'YDAdModule_CSJ.xcframework', 'YDAdModule_GDT.xcframework', 'YDAdModule_KS.xcframework', 'YDAdModule_BD.xcframework', 'KSAdSDK.xcframework'
+  spec.vendored_frameworks = 'YDAdModule.xcframework', 'YDAdModule_CSJ.xcframework', 'YDAdModule_GDT.xcframework', 'YDAdModule_KS.xcframework', 'YDAdModule_BD.xcframework'
   spec.resources = 'YDAdModule.bundle'
   
   spec.dependency 'Ads-Fusion-CN-Beta/CSJMediation', '6.4.1.0'
   spec.dependency 'CSJMGdtAdapter', '4.14.45.0'
   spec.dependency 'CSJMBaiduAdapter', '5.325.1'
   spec.dependency 'CSJMKsAdapter', '3.3.55.0.0'
-  # spec.dependency 'KSAdSDK', '3.3.69.3'
+  spec.dependency 'KSAdSDK', '3.3.69.3'
   spec.dependency 'BaiduMobAdSDK', '5.14'
   spec.dependency 'GDTMobSDK', '4.15.10'
   
