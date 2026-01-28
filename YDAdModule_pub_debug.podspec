@@ -1,14 +1,20 @@
 Pod::Spec.new do |spec|
   spec.name         = 'YDAdModule_pub_debug'
-  spec.version      = '3.0.0.3'
+  spec.version      = '3.0.1.2'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/yuedong12345/ydsdk_pub_debug.git'
   spec.authors      = { 'yuedong12345' => 'yuedong12345@126.com' }
   spec.summary      = 'ydAd'
   spec.source       = { :git => 'https://github.com/yuedong12345/ydsdk_pub_debug.git', :tag =>spec.version.to_s  }
   spec.platform     = :ios, '10.0'
-  spec.vendored_frameworks = 'YDAdModule.framework'
+  
+  # Updated to use xcframeworks
+  # 包含 Core 和所有 Adapter 模块
+  spec.vendored_frameworks = 'YDAdModule.xcframework', 'YDAdModule_CSJ.xcframework', 'YDAdModule_GDT.xcframework', 'YDAdModule_KS.xcframework', 'YDAdModule_BD.xcframework'
+  
   spec.resources = 'YDAdModule.bundle'
+  
+  # 依赖配置保持不变
   spec.dependency 'Ads-Fusion-CN-Beta/CSJMediation', '6.4.1.0'
   spec.dependency 'CSJMGdtAdapter', '4.14.45.0'
   spec.dependency 'CSJMBaiduAdapter', '5.325.1'
@@ -17,6 +23,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'KSAdSDK', '3.3.69.3'
   spec.dependency 'BaiduMobAdSDK', '5.14'
   spec.dependency 'GDTMobSDK', '4.15.10'
+  
   spec.user_target_xcconfig = {
      'GENERATE_INFOPLIST_FILE' => 'YES'
   }

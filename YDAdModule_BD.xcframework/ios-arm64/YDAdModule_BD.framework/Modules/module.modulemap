@@ -1,0 +1,6 @@
+framework module YDAdModule_BD {
+  umbrella header "YDAdModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
