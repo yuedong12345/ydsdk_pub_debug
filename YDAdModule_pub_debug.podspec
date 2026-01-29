@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'YDAdModule_pub_debug'
-  spec.version      = '3.0.1.4'
+  spec.version      = '3.0.1.5'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/yuedong12345/ydsdk_pub_debug.git'
   spec.authors      = { 'yuedong12345' => 'yuedong12345@126.com' }
@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   
   # Updated to use xcframeworks
   # 包含 Core 和所有 Adapter 模块
-  spec.vendored_frameworks = 'YDAdModule.xcframework', 'YDAdModule_CSJ.xcframework', 'YDAdModule_GDT.xcframework', 'YDAdModule_KS.xcframework', 'YDAdModule_BD.xcframework'
+  spec.vendored_frameworks = 'YDAdModule.xcframework', 'YDAdModule_CSJ.xcframework', 'YDAdModule_GDT.xcframework', 'YDAdModule_KS.xcframework', 'YDAdModule_BD.xcframework', 'UbiXAdSDK.framework', 'UbiXDaq.framework', 'YFAdsSDK.xcframework', 'YFAdsSubstrate.xcframework', 'ZindexBase.xcframework'
   spec.resources = 'YDAdModule.bundle'
   
   spec.dependency 'Ads-Fusion-CN-Beta/CSJMediation', '6.4.1.0'
