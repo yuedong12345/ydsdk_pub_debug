@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'YDAdModule_pub_debug'
-  s.version          = '3.0.1.0'
+  s.version          = '3.0.1.1'
   s.license          = { :type => 'MIT' }
   s.homepage         = 'https://github.com/yuedong12345/ydsdk_pub_debug.git'
   s.author           = { 'yuedong12345' => 'yuedong12345@126.com' }
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   # SDK组成：融合SDK + 3个adapter
   # ========================================
   s.subspec 'CSJ' do |csj|
-    csj.dependency 'YDAdModule_pub/Core'
+    csj.dependency 'YDAdModule_pub_debug/Core'
 
     # CSJ适配器xcframework
     csj.vendored_frameworks = 'Frameworks/YDAdModule_CSJ.xcframework'
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   # SDK组成：GDTMobSDK
   # ========================================
   s.subspec 'GDT' do |gdt|
-    gdt.dependency 'YDAdModule_pub/Core'
+    gdt.dependency 'YDAdModule_pub_debug/Core'
 
     # GDT适配器xcframework
     gdt.vendored_frameworks = 'Frameworks/YDAdModule_GDT.xcframework'
@@ -112,7 +112,7 @@ Pod::Spec.new do |s|
   # SDK组成：KSAdSDK
   # ========================================
   s.subspec 'KS' do |ks|
-    ks.dependency 'YDAdModule_pub/Core'
+    ks.dependency 'YDAdModule_pub_debug/Core'
 
     # KS适配器xcframework
     ks.vendored_frameworks = 'Frameworks/YDAdModule_KS.xcframework'
@@ -134,7 +134,7 @@ Pod::Spec.new do |s|
   # SDK组成：BaiduMobAdSDK
   # ========================================
   s.subspec 'BD' do |bd|
-    bd.dependency 'YDAdModule_pub/Core'
+    bd.dependency 'YDAdModule_pub_debug/Core'
 
     # BD适配器xcframework
     bd.vendored_frameworks = 'Frameworks/YDAdModule_BD.xcframework'
