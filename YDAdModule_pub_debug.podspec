@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'YDAdModule_pub_debug'
-  s.version          = '3.0.1.1'
+  s.version          = '3.0.1.3'
   s.license          = { :type => 'MIT' }
   s.homepage         = 'https://github.com/yuedong12345/ydsdk_pub_debug.git'
   s.author           = { 'yuedong12345' => 'yuedong12345@126.com' }
